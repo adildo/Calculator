@@ -1,0 +1,104 @@
+* {
+    font-family:  "Monaco";
+}
+
+body {
+    min-width: 100vh;
+    margin: 0;
+    padding: 60px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 55px;
+    gap: 30px;
+    background-color: rgb(160, 142, 142);
+}
+#screen {
+    padding: 6px;
+    border: solid rgb(96, 104, 129) 5px;
+    background-color: rgb(243, 243, 243);
+    margin: 5px 0;
+    border-radius: 30px;
+    height: 70px;
+    width: 350px;
+    text-align: right;
+    line-height: 70px;
+    font-size: 25px;
+}
+#frame {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    background-color: rgb(145, 158, 179);
+    border-radius: 17px;
+    padding: 10px;
+    margin: 0;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#keypad {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    padding: 0;
+    margin: 0;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0;
+    margin: 0;
+    gap: 0;
+
+}
+.zero {
+    grid-column: 1 / span 3;
+    width: auto;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    grid-column: 1 / span 2;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-self: stretch;
+}
+button {
+    width: 90px;
+    height: 90px;
+    font-size: 24px;
+    padding: 0;
+    margin: 3.5px;
+    border-radius: 20px;
+    background-color: rgb(194, 199, 172);
+    transition: all 0.07;
+}
+
+button.operator {
+    background-color: burlywood;
+}
+
+#operate {
+    background-color: rgb(100, 163, 87);
+}
+.settings {
+    background-color: rgb(189, 104, 104);
+}
+
+button:hover {
+    background-color: white;
+}
+#operate:hover{
+    background-color: white;
+}
